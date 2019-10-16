@@ -12,8 +12,14 @@ const SpotSchema = new mongoose.Schema(
     }
   },
   {
-    timestamps: true
+    toJSON: {
+      virtuals: true
+    }
   }
 );
+
+SpotSchema.virtual("thumbnail_url").get(function() {
+  return `http://${process.env.HOST}:${process.env.PORT}/files/${this.thumbnail}`;
+});
 
 module.exports = mongoose.model("Spot", SpotSchema);

@@ -1,21 +1,18 @@
 {
   "name": "aircnc-backend",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "server.js",
-  "repository": "https://github.com/devjonathansouzasi/aircnc.git",
-  "author": "Jonathan Souza <devjonathansouzasi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src/server.js"
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "fs": "^0.0.1-security",
     "mongoose": "^5.7.3",
-    "multer": "^1.4.2"
+    "multer": "^1.4.2",
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
