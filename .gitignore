@@ -1,6 +1,6 @@
 
-uploads/*
-!uploads/.gitkeep 
+backend/uploads/*
+backend/!uploads/.gitkeep 
 
 dependencies
 node_modules
